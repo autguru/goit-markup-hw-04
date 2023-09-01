@@ -1,0 +1,410 @@
+/*  COMMON STYLES  */
+
+.list {
+  list-style-type: none;
+  /* display: flex; */
+}
+
+.link {
+  text-decoration: none;
+}
+
+/* a {
+  text-decoration: none;
+} */
+
+button {
+  cursor: pointer;
+}
+
+body {
+  font-family: Roboto, sans-serif;
+  color: #434455;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul,
+ol,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+
+.container {
+  width: 1158px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.page-header {
+  border-bottom: 1px solid #e7e9fc; /* оформлення нижнього краю хедера */
+}
+
+.page-header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1158px;
+}
+.page-navigation {
+  display: flex;
+  align-items: center; /* вирівнювання навігації та контактів по вертикалі */
+}
+
+.header-logo-right {
+  margin-left: 76px;
+  margin-right: 76px;
+  display: flex;
+}
+.menu-nav-list {
+  display: flex;
+  gap: 40px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+/* .page-header-adress {
+ 
+  gap: 40px;
+} */
+/* .menu {
+} */
+
+.logotype {
+  color: #4d5ae5;
+  font-family: Raleway, sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 1.17; /* 116.667% */
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  align-items: center;
+}
+.logo-part-header {
+  color: #2e2f42;
+}
+.adress-item-link {
+  color: #434455;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  gap: 40px;
+  display: flex;
+}
+.adress-item-link:hover,
+.adress-item-link:focus {
+  color: #404bbf;
+}
+
+.menu-link {
+  color: #2e2f42;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+.menu-link:hover,
+.menu-link:focus {
+  color: #404bbf;
+}
+
+/* HERO SECTION  */
+
+.section-hero-container {
+  background-color: #2e2f42;
+  /* width: 1440px;
+  height: 600px; */
+  flex-shrink: 0;
+  padding: 188px 0;
+}
+
+.hero-title-size {
+  max-width: 496px;
+}
+.serv-btn-location {
+  display: block;
+  min-width: 169px;
+  height: 56px;
+  border: none;
+  background-color: #4d5ae5;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.section-hero-title {
+  color: #fff;
+  background: #2e2f42;
+  text-align: center;
+  font-size: 56px;
+  font-weight: 700;
+  line-height: 1.07; /* 107.143% */
+  letter-spacing: 0.02em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.order-serv-btn {
+  color: #ffffff;
+  background-color: #4d5ae5;
+  /* Button Text */
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.04em;
+  margin-right: auto;
+  margin-left: auto;
+  align-items: center;
+  margin-top: 48px;
+}
+
+.order-serv-btn:hover,
+.order-serv-btn:focus {
+  background-color: #404bbf;
+}
+
+/* SOLUTIONS */
+
+.section-our-solution {
+  background: #fff;
+  padding: 120px 0;
+}
+
+.solution-list-style {
+  display: flex;
+  gap: 24px;
+}
+
+.solution-text-size {
+  width: calc((100% - 72px) / 4);
+
+  /* Для 1 li в класі заданий стиль width: calc((100% - 72px) / 4);
+  для визначення ширини пункту списку (від загальної ширини екрану віднімаємо суму відступів між пунктами
+   і ділимо це на кількість пунктів списку)
+   (можна також використовувати width calc((100% - 3 * 24px) / 4) 
+   або flex-basis: calc((100% - 3 * 24px) / 4) або flex-basis: calc((100% - 72px) / 4)) */
+}
+
+/* Header 3 */
+.section-solution-title {
+  color: #2e2f42;
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.section-solution-text {
+  color: #434455;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+/* TEAM */
+
+.section-our-team {
+  background-color: #f4f4fd;
+  padding: 120px 0;
+}
+.our-team-title {
+  color: #2e2f42;
+  /* Header 2 */
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  margin-bottom: 8px;
+}
+
+.team-title-location {
+  margin-bottom: 72px;
+  text-align: center;
+}
+
+.team-list-location {
+  display: flex;
+  gap: 24px;
+}
+
+.li-our-team {
+  width: calc((100% - 72px) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.our-team-li-position {
+  padding: 32px 0;
+}
+.our-team-list {
+  background-color: #ffffff;
+}
+.our-team-names {
+  color: #2e2f42;
+  /* Header 3 */
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+  margin-bottom: 8px;
+}
+.our-team-describtion {
+  color: #434455;
+  text-align: center;
+  /* Body */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+
+/* Our Portfolio */
+
+.section-our-portfolio {
+  background: #ffffff;
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.section-portfolio-title {
+  margin-bottom: 72px;
+}
+
+.li-position-horizont {
+  display: flex; /* розміщення елементів списку в рядок по горизонталі */
+  flex-wrap: wrap; /* для переносу елементів списку на новий рядок */
+  column-gap: 24px; /* для визначення горизонтальних відступів між пунктами списку */
+  row-gap: 48px; /* для визначення вертикальних відступів між елементами списку якщо вони 
+  переносяться на новий рядок
+  (можна використовувати margin-bottom: 48px для тега li у класі, 
+  для трьох останіх пунктів списку використовуємо margin-bottom: 0 для обнулення відступів) */
+}
+
+.portfolio-li-style {
+  width: calc((100% - 48px) / 3);
+  /* Для першого пункту списку в класі заданий стиль width: calc((100% - 48px) / 3); 
+для визначення ширини для елемента списку (від загальної ширини екрану віднімаємо суму 
+відступів між пунктами і ділимо це на кількість пунктів списку в одному рядку) */
+}
+
+.container-portfolio-div {
+  padding: 32px 16px;
+  border: 1px solid #e7e9fc; /* визначення стилю обводки по периметру контейнера */
+  border-top: none; /* скидання стилів обводки для верхнього краю контейнера */
+  margin-bottom: 8px;
+}
+
+.our-portfolio-title {
+  color: #2e2f42;
+  text-align: center;
+  /* Header 2 */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  text-align: center;
+  margin-bottom: 8px;
+}
+.main-title {
+  color: #2e2f42;
+  text-align: center;
+  /* Header 2 */
+  font-family: Roboto;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.11; /* 111.111% */
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+}
+
+.our-portfolio-items {
+  color: #2e2f42;
+  background: #ffffff;
+  /* Header 3 */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+  /* tyt putannia */
+  /* align-content: space-between;
+  flex-wrap: wrap; */
+}
+
+.our-portfolio-describtion {
+  color: #434455;
+  background: #ffffff;
+  /* Body */
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  /* display: flex; can I wright here?  */
+  /* tyt putannia */
+  /* align-content: space-between;
+  flex-wrap: wrap; */
+}
+
+/* FOOTER */
+
+.section-footer-text {
+  color: #f4f4fd;
+  background-color: #2e2f42;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+}
+.section-footer-fon {
+  background: #2e2f42;
+  padding: 100px 0;
+}
+.logotype-footer-style {
+  color: #4d5ae5;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-part-footer {
+  color: #f4f4fd;
+}
+
+.link-footer-position {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
+.list-footer-size {
+  max-width: 264px;
+}
