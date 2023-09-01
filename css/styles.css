@@ -2,7 +2,6 @@
 
 .list {
   list-style-type: none;
-  /* display: flex; */
 }
 
 .link {
@@ -72,13 +71,6 @@ img {
   padding-top: 24px;
   padding-bottom: 24px;
 }
-
-/* .page-header-adress {
- 
-  gap: 40px;
-} */
-/* .menu {
-} */
 
 .logotype {
   color: #4d5ae5;
@@ -175,6 +167,29 @@ img {
 }
 
 /* SOLUTIONS */
+
+.wrapper {
+  width: 264px;
+  height: 112px;
+  margin-bottom: 8px;
+  margin-top: 120px;
+  flex-shrink: 0;
+  border-radius: 4px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
+}
+.box-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+}
+.solution-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .section-our-solution {
   background: #fff;
