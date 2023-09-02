@@ -45,8 +45,12 @@ img {
   padding: 0 15px;
 }
 
+/* HEADER */
+
 .page-header {
   border-bottom: 1px solid #e7e9fc; /* оформлення нижнього краю хедера */
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
 .page-header-container {
@@ -72,6 +76,27 @@ img {
   padding-bottom: 24px;
 }
 
+.menu-link-studio {
+  color: #404bbf;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* для плавної зміни кольору текстового контенту */
+}
+
+.menu-link-studio::after {
+  content: 'ddgd';
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  height: 4px;
+  width: 48px;
+  background-color: #404bbf;
+  border-radius: 2px;
+}
+
 .logotype {
   color: #4d5ae5;
   font-family: Raleway, sans-serif;
@@ -94,6 +119,7 @@ img {
   letter-spacing: 0.02em;
   gap: 40px;
   display: flex;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1); /* для плавної зміни кольору текстового контенту */
 }
 .adress-item-link:hover,
 .adress-item-link:focus {
@@ -126,6 +152,10 @@ img {
     ),
     url(/images/people-office.jpg);
   background-size: cover;
+  max-width: 1440px;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin: 0 auto;
 }
 
 .hero-title-size {
@@ -165,6 +195,7 @@ img {
   margin-left: auto;
   align-items: center;
   margin-top: 48px;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .order-serv-btn:hover,
