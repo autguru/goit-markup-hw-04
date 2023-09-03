@@ -426,12 +426,27 @@ img {
   font-size: 16px;
   overflow: hidden;
 }
-.portfolio-img-cover:hover,
-.portfolio-img-cover:focus {
-  transform: translateY(0%);
-  /* При ховері на елемент списку змінюється стиль transform  */
-}
+/* .portfolio-img-cover:hover,
+.portfolio-img-cover:focus { */
+/* transform: translateY(0%); */
+/* При ховері на елемент списку змінюється стиль transform  */
 
+.our-portfolio-items {
+  color: #2e2f42;
+  background: #ffffff;
+  /* Header 3 */
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2; /* 120% */
+  letter-spacing: 0.02em;
+  /* tyt putannia */
+  /* align-content: space-between;
+  flex-wrap: wrap; */
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* плавної появи тіні */
+}
 .overlay {
   position: absolute;
   top: 0;
@@ -439,8 +454,10 @@ img {
   width: 100%;
   height: 100%;
   background: var(--IRIS, #4d5ae5);
-  transform: translateY(0%);
-
+  transform: translateY(100%);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* дозволяє задавати анімаційний ефект для зміни значень властивостей стилю */
+  font-size: 16px;
   line-height: 1.5; /* простору між рядками */
   letter-spacing: 0.02em;
   color: #f4f4fd;
@@ -449,12 +466,14 @@ img {
   height: 100%;
   width: 100%;
 }
-.overlay:hover,
-.overlay:focus {
+
+.our-portfolio-items:hover,
+.overlay,
+.our-portfolio-items:focus .overlay {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transform: translateY(100%); /* змінює позицію елемента вздовж осі Y */
+  transform: translateY(0%); /* змінює позицію елемента вздовж осі Y */
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   /* дозволяє задавати анімаційний ефект для змін */
 }
@@ -516,23 +535,6 @@ img {
   line-height: 1.11; /* 111.111% */
   letter-spacing: 0.02em;
   text-transform: capitalize;
-}
-
-.our-portfolio-items {
-  color: #2e2f42;
-  background: #ffffff;
-  /* Header 3 */
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 1.2; /* 120% */
-  letter-spacing: 0.02em;
-  /* tyt putannia */
-  /* align-content: space-between;
-  flex-wrap: wrap; */
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* плавної появи тіні */
 }
 
 .our-portfolio-describtion {
