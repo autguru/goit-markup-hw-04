@@ -358,7 +358,7 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1); 
   /* для плавної зміни кольору фону елемента */
 }
 
@@ -372,7 +372,7 @@ img {
   left: 100%;
   transform: translate(-50%, -50%);
   color: #f4f4fd;
-  fill: #f4f4fd;
+  fill: #f4f4fd ;
   /* display: flex;
   justify-content: center;
   align-items: center;
@@ -424,12 +424,12 @@ img {
   position: relative;
   top: 0;
   font-size: 16px;
-  overflow: hidden;
+  overflow: hidden; 
 }
 .portfolio-img-cover:hover,
 .portfolio-img-cover:focus {
-  transform: translateY(0%);
-  /* При ховері на елемент списку змінюється стиль transform  */
+ transform: translateY(0%);
+  /* При ховері на елемент списку змінюється стиль transform  */ 
 }
 
 .overlay {
@@ -448,6 +448,7 @@ img {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
+  
 }
 .overlay:hover,
 .overlay:focus {
@@ -552,9 +553,9 @@ img {
 /* FOOTER */
 
 .footer-container {
-  display: flex;
-  align-items: baseline;
-  /* що встановлює вирівнювання елементів у поперечному напрямку
+ display: flex;
+ align-items: baseline; 
+ /* що встановлює вирівнювання елементів у поперечному напрямку
   вздовж головної осі контейнера 
  відносно базової лінії тексту першого рядка кожного елемента  */
 }
@@ -571,14 +572,13 @@ img {
   font-style: normal;
   font-weight: 500;
   line-height: 1.5; /* 150% */
-  letter-spacing: 0.02em;
+  letter-spacing: 0.02em; 
   margin-bottom: 16px; /* відступ між елементами списку */
 }
 .soc-list-style {
   display: flex;
-  gap: 16px;
+  gap: 16px; 
 }
-
 .soc-seti-title {
   text-align: center;
   color: var(--WHITE, #fff);
@@ -634,3 +634,4 @@ img {
 .footer-list {
   text-decoration: none;
 }
+
