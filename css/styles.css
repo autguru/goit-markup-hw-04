@@ -1,28 +1,22 @@
 /*  COMMON STYLES  */
-
 .list {
   list-style-type: none;
 }
-
 .link {
   text-decoration: none;
   display: block;
 }
-
 /* a {
   text-decoration: none;
 } */
-
 button {
   cursor: pointer;
 }
-
 body {
   font-family: Roboto, sans-serif;
   color: #434455;
   background-color: #ffffff;
 }
-
 h1,
 h2,
 h3 {
@@ -39,7 +33,6 @@ p {
 img {
   display: block;
 }
-
 .container {
   width: 1158px;
   margin: 0 auto;
@@ -50,7 +43,7 @@ img {
 
 .page-header {
   border-bottom: 1px solid #e7e9fc; /* оформлення нижнього краю хедера */
-  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 
@@ -60,6 +53,8 @@ img {
   align-items: center;
   width: 1158px;
   margin-bottom: auto;
+  box-shadow: зі значенням 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .page-navigation {
   display: flex;
@@ -363,6 +358,8 @@ img {
   display: flex;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* для плавної зміни кольору фону елемента */
 }
 
 .soc-icons {
@@ -375,6 +372,16 @@ img {
   left: 100%;
   transform: translate(-50%, -50%);
   color: #f4f4fd;
+  fill: #f4f4fd;
+  /* display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 64px;
+  height: 64px;
+  flex-shrink: 0;
+  position: absolute;
+  top: 0;
+  left: 0; */
 }
 
 .link-soc-seti:hover,
@@ -417,6 +424,12 @@ img {
   position: relative;
   top: 0;
   font-size: 16px;
+  overflow: hidden;
+}
+.portfolio-img-cover:hover,
+.portfolio-img-cover:focus {
+  transform: translateY(0%);
+  /* При ховері на елемент списку змінюється стиль transform  */
 }
 
 .overlay {
@@ -435,15 +448,15 @@ img {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
-  transform: translateY(100%); /* змінює позицію елемента вздовж осі Y */
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  /* дозволяє задавати анімаційний ефект для змін */
 }
 .overlay:hover,
 .overlay:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transform: translateY(100%); /* змінює позицію елемента вздовж осі Y */
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  /* дозволяє задавати анімаційний ефект для змін */
 }
 
 .section-our-portfolio {
@@ -538,6 +551,48 @@ img {
 
 /* FOOTER */
 
+.footer-container {
+  display: flex;
+  align-items: baseline;
+  /* що встановлює вирівнювання елементів у поперечному напрямку
+  вздовж головної осі контейнера 
+ відносно базової лінії тексту першого рядка кожного елемента  */
+}
+/* div який огортає логотип і параграф */
+.div-logo-p {
+  margin-right: 120px; /* відступ між елементами */
+}
+.soc-seti-p {
+  text-align: center;
+  color: #fff;
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  margin-bottom: 16px; /* відступ між елементами списку */
+}
+.soc-list-style {
+  display: flex;
+  gap: 16px;
+}
+
+.soc-seti-title {
+  text-align: center;
+  color: var(--WHITE, #fff);
+
+  /* Body Medium */
+  font-family: Roboto;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5; /* 150% */
+  letter-spacing: 0.02em;
+  margin-bottom: 16px;
+}
+
 .section-footer-text {
   color: #f4f4fd;
   background-color: #2e2f42;
@@ -578,16 +633,4 @@ img {
 
 .footer-list {
   text-decoration: none;
-}
-.soc-seti-title {
-  text-align: center;
-  color: var(--WHITE, #FFF);
-
-/* Body Medium */
-font-family: Roboto;
-font-size: 16px;
-font-style: normal;
-font-weight: 500;
-line-height: 1.5; /* 150% */
-letter-spacing: 0.02em;
 }
