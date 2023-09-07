@@ -394,7 +394,7 @@ img {
   font-weight: 400;
   line-height: 1.5; /* 150% */
   letter-spacing: 0.02em;
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 /* OUR PORTFOLIO */
@@ -494,7 +494,7 @@ img {
   padding: 32px 16px;
   border: 1px solid #e7e9fc; /* визначення стилю обводки по периметру контейнера */
   border-top: none; /* скидання стилів обводки для верхнього краю контейнера */
-  margin-bottom: 8px;
+  /* margin-bottom: 8px; */
 }
 
 .our-portfolio-title {
